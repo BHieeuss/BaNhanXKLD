@@ -13,7 +13,7 @@ echo Create file CNAME...
 echo banhanxkld.id.vn > dist\app\browser\CNAME
 
 echo Deploy GitHub Pages...
-call npx angular-cli-ghpages --dir=dist/app/browser --repo=https://github.com/BHieeuss/ViecLamXKLD.git
+call npx angular-cli-ghpages --dir=dist/app/browser --repo=https://github.com/BHieeuss/BaNhanXKLD.git
 
 echo done!
 pause
