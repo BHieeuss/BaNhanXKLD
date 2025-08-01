@@ -1,0 +1,425 @@
+<app-banner></app-banner>
+
+<!-- About Section với Lazy Loading -->
+<app-lazy-section [enableLazyLoad]="true" [animationType]="'fade-up'" [duration]="'1000'" [delay]="'100'"
+    [skeletonType]="'card'" [sectionName]="'about'">
+    <div id="about" class="about-us section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="left-image wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <img src="assets/images/about-left-image.png" alt="person graphic">
+                    </div>
+                </div>
+                <div class="col-lg-8 align-self-center">
+                    <div id="services" class="services">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-user-cog"></i>
+                                    </div>
+                                    <div class="right-text">
+                                        <h4>Kỹ sư</h4>
+                                        <p>Tốt nghiệp cao đẳng, đại học các ngành nghề, sẵn sàng làm việc trong các dự
+                                            án
+                                            tại Nhật Bản với kỹ năng chuyên môn.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-tools"></i>
+                                    </div>
+                                    <div class="right-text">
+                                        <h4>Tokutei</h4>
+                                        <p>Lao động có kỹ năng đặc định, được đào tạo và làm việc tại Nhật Bản trong các
+                                            ngành nghề dành cho lao động có kinh nghiệm, chứng chỉ ngành nghề.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-user-graduate"></i>
+                                    </div>
+                                    <div class="right-text">
+                                        <h4>Thực tập sinh</h4>
+                                        <p>Được đào tạo thực tế tại Nhật Bản, học hỏi công nghệ và trau dồi kỹ năng để
+                                            phát
+                                            triển sự nghiệp trong môi trường chuyên nghiệp.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="1.1s">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-book-reader"></i>
+                                    </div>
+                                    <div class="right-text">
+                                        <h4>Du học sinh</h4>
+                                        <p>Học tập tại Nhật Bản, trải nghiệm văn hóa và giáo dục tiên tiến, mở rộng kiến
+                                            thức và mối quan hệ cho tương lai.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</app-lazy-section>
+
+<hr>
+
+<!-- Portfolio Section với Lazy Loading - Ngành nghề Hot tại Nhật Bản -->
+<app-lazy-section [enableLazyLoad]="true" [animationType]="'fade-up'" [duration]="'1500'" [delay]="'200'"
+    [skeletonType]="'card'" [sectionName]="'portfolio'">
+    <div id="portfolio" class="hot-jobs-japan section">
+        <div class="container">
+            <!-- Header Section với phong cách Nhật Bản -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading text-center wow fadeInDown" data-wow-duration="1.2s"
+                        data-wow-delay="0.2s">
+                        <div class="japanese-header">
+                            <h6 class="japanese-subtitle">人気の職業</h6>
+                            <h2 class="main-title">
+                                Các ngành nghề <span class="highlight-red">HOT</span>
+                                <br>tại <em class="japan-style">Nhật Bản</em>
+                                <span class="decorative-element">🌸</span>
+                            </h2>
+                            <p class="section-description">
+                                Khám phá những ngành nghề đang có nhu cầu cao và mức lương hấp dẫn tại đất nước mặt trời
+                                mọc
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid ngành nghề với thiết kế card Nhật Bản -->
+            <div class="row jobs-grid">
+                <!-- IT & Technology -->
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="job-card wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <div class="card-header">
+                            <div class="icon-container tech-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="job-info">
+                                <h4 class="job-title">IT & Công nghệ</h4>
+                                <span class="japanese-name">ITエンジニア</span>
+                                <div class="salary-range">¥4,000,000 - ¥8,000,000/năm</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="job-description">
+                                Lập trình viên, kỹ sư phần mềm, AI/ML engineer. Ngành có mức lương cao và cơ hội thăng
+                                tiến tốt.
+                            </p>
+                            <div class="skill-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Java</span>
+                                <span class="tag">React</span>
+                                <span class="tag">AI/ML</span>
+                            </div>
+                            <div class="demand-indicator">
+                                <span class="demand-text">Nhu cầu:</span>
+                                <div class="demand-bars">
+                                    <div class="bar active"></div>
+                                    <div class="bar active"></div>
+                                    <div class="bar active"></div>
+                                    <div class="bar active"></div>
+                                    <div class="bar active"></div>
+                                </div>
+                                <span class="demand-level">Rất cao</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Manufacturing & Engineering -->
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="job-card wow slideInRight" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <div class="card-header">
+                            <div class="icon-container manufacturing-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <div class="job-info">
+                                <h4 class="job-title">Chế tạo & Kỹ thuật</h4>
+                                <span class="japanese-name">製造業エンジニア</span>
+                                <div class="salary-range">¥3,500,000 - ¥6,500,000/năm</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="job-description">
+                                Kỹ sư cơ khí, điện tử, ô tô. Làm việc tại các công ty lớn như Toyota, Honda, Sony.
+                            </p>
+                            <div class="skill-tags">
+                                <span class="tag">CAD/CAM</span>
+                                <span class="tag">Lean Six Sigma</span>
+                                <span class="tag">Quality Control</span>
+                            </div>
+                            <div class="demand-indicator">
+                                <span class="demand-text">Nhu cầu:</span>
+                                <div class="demand-bars">
+                                    <div class="bar active"></div>
+                                    <div class="bar active"></div>
+                                    <div class="bar active"></div>
+                                    <div class="bar active"></div>
+                                    <div class="bar"></div>
+                                </div>
+                                <span class="demand-level">Cao</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Healthcare & Nursing -->
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="job-card wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="card-header">
+                            <div class="icon-container healthcare-icon">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="job-info">
+                                <h4 class="job-title">Y tế & Điều dưỡng</h4>
+                                <span class="japanese-name">看護師・介護士</span>
+                                <div class="salary-range">¥3,200,000 - ¥5,800,000/năm</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="job-description">
+                                Điều dưỡng viên, chăm sóc người cao tuổi. Ngành ổn định với chế độ phúc lợi tốt.
+                            </p>
+                            <div class="skill-tags">
+                                <span class="tag">Nursing Care</span>
+                                <span class="tag">Elder Care</span>
+                                <span class="tag">Medical Knowledge</span>
+                            </div>
+                            <div class="demand-indicator">
+                                <span class="demand-text">Nhu cầu:</span>
+                                <div class="demand-bars">
+                                    <div class="bar active"></div>
+                                    <div class="bar active"></div>
+                                    <div class="bar active"></div>
+                                    <div class="bar active"></div>
+                                    <div class="bar active"></div>
+                                </div>
+                                <span class="demand-level">Rất cao</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hospitality & Service -->
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="job-card wow slideInRight" data-wow-duration="1s" data-wow-delay="0.6s">
+                        <div class="card-header">
+                            <div class="icon-container service-icon">
+                                <i class="fas fa-concierge-bell"></i>
+                            </div>
+                            <div class="job-info">
+                                <h4 class="job-title">Dịch vụ & Nhà hàng</h4>
+                                <span class="japanese-name">サービス業・飲食業</span>
+                                <div class="salary-range">¥2,800,000 - ¥4,500,000/năm</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="job-description">
+                                Nhân viên khách sạn, nhà hàng, du lịch. Cơ hội học hỏi văn hóa và ngôn ngữ Nhật.
+                            </p>
+                            <div class="skill-tags">
+                                <span class="tag">Customer Service</span>
+                                <span class="tag">Hospitality</span>
+                                <span class="tag">Japanese N3+</span>
+                            </div>
+                            <div class="demand-indicator">
+                                <span class="demand-text">Nhu cầu:</span>
+                                <div class="demand-bars">
+                                    <div class="bar active"></div>
+                                    <div class="bar active"></div>
+                                    <div class="bar active"></div>
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                </div>
+                                <span class="demand-level">Trung bình</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Construction -->
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="job-card wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.7s">
+                        <div class="card-header">
+                            <div class="icon-container construction-icon">
+                                <i class="fas fa-hard-hat"></i>
+                            </div>
+                            <div class="job-info">
+                                <h4 class="job-title">Xây dựng & Kiến trúc</h4>
+                                <span class="japanese-name">建設業・建築業</span>
+                                <div class="salary-range">¥3,000,000 - ¥5,500,000/năm</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="job-description">
+                                Thợ xây, kỹ sư xây dựng, thiết kế kiến trúc. Ngành ổn định với nhiều dự án lớn.
+                            </p>
+                            <div class="skill-tags">
+                                <span class="tag">Construction</span>
+                                <span class="tag">Architecture</span>
+                                <span class="tag">Safety Management</span>
+                            </div>
+                            <div class="demand-indicator">
+                                <span class="demand-text">Nhu cầu:</span>
+                                <div class="demand-bars">
+                                    <div class="bar active"></div>
+                                    <div class="bar active"></div>
+                                    <div class="bar active"></div>
+                                    <div class="bar active"></div>
+                                    <div class="bar"></div>
+                                </div>
+                                <span class="demand-level">Cao</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agriculture & Food -->
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="job-card wow slideInRight" data-wow-duration="1s" data-wow-delay="0.8s">
+                        <div class="card-header">
+                            <div class="icon-container agriculture-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <div class="job-info">
+                                <h4 class="job-title">Nông nghiệp & Thực phẩm</h4>
+                                <span class="japanese-name">農業・食品加工業</span>
+                                <div class="salary-range">¥2,500,000 - ¥4,000,000/năm</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="job-description">
+                                Sản xuất nông nghiệp, chế biến thực phẩm. Môi trường làm việc thân thiện, gần gũi thiên
+                                nhiên.
+                            </p>
+                            <div class="skill-tags">
+                                <span class="tag">Farming</span>
+                                <span class="tag">Food Processing</span>
+                                <span class="tag">Quality Control</span>
+                            </div>
+                            <div class="demand-indicator">
+                                <span class="demand-text">Nhu cầu:</span>
+                                <div class="demand-bars">
+                                    <div class="bar active"></div>
+                                    <div class="bar active"></div>
+                                    <div class="bar active"></div>
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                </div>
+                                <span class="demand-level">Trung bình</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</app-lazy-section>
+
+<div id="contact" class="contact-us section starbucks-style-footer">
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="footer-logo-section">
+                    <div class="company-logo">
+                        <img src="assets/images/logo.png" alt="Việc Làm Nhật Bản" class="footer-logo">
+                    </div>
+                    <h3 class="company-tagline">VIỆC LÀM NHẬT BẢN</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Links Section -->
+        <div class="row">
+            <div class="col-12">
+                <div class="footer-nav-section">
+                    <div class="nav-group">
+                        <h5 class="nav-title">Về chúng tôi</h5>
+                        <ul class="nav-links">
+                            <li><a href="#about">Giới thiệu</a></li>
+                            <li><a href="#services">Dịch vụ</a></li>
+                            <li><a href="#portfolio">Ngành nghề</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-group">
+                        <h5 class="nav-title">Liên hệ chúng tôi</h5>
+                        <ul class="nav-links">
+                            <li><a href="tel:0344315150">Gọi/Zalo: 034 431 5150</a></li>
+                            <li><a href="mailto:info@vieclamnhatban.com">Email: info&#64;vieclamnhatban.com</a></li>
+                            <li><a href="https://www.facebook.com/tranbanhan1997" target="_blank">Facebook</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-group">
+                        <h5 class="nav-title">Điều khoản sử dụng</h5>
+                        <ul class="nav-links">
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                            <li><a href="#">Điều khoản dịch vụ</a></li>
+                            <li><a href="#">Starbucks.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Language Selection -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="language-selection">
+                    <div class="globe-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <span class="language-text">Vietnamese (Việt Nam) ( English (Việt Nam) )</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="social-media-section">
+                    <a href="https://www.facebook.com/tranbanhan1997" target="_blank" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="mailto:info@vieclamnhatban.com" class="social-link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Text -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="footer-disclaimer">
+                    <p>VIỆC LÀM NHẬT BẢN là trang được xây dựng bởi HHT Team được cung cấp thông qua 0379932119 (zalo).
+                    </p>
+                    <p>Chúng tôi cam kết mang đến thông tin chính xác và hữu ích nhất cho người tìm việc.</p>
+                    <p>© 2025 VIỆC LÀM NHẬT BẢN. Bảo lưu mọi quyền.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accessibility Icon -->
+        <div class="accessibility-icon">
+            <i class="fas fa-universal-access"></i>
+        </div>
+    </div>
+</div>

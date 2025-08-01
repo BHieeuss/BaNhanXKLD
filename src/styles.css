@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Custom animations for better performance */
+[data-aos] {
+  pointer-events: none;
+}
+[data-aos].aos-animate {
+  pointer-events: auto;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom AOS animations */
+[data-aos="fade-up-scale"] {
+  transform: translate3d(0, 40px, 0) scale(0.9);
+  opacity: 0;
+}
+[data-aos="fade-up-scale"].aos-animate {
+  transform: translate3d(0, 0, 0) scale(1);
+  opacity: 1;
+}
+
+[data-aos="slide-left"] {
+  transform: translate3d(-100px, 0, 0);
+  opacity: 0;
+}
+[data-aos="slide-left"].aos-animate {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+[data-aos="slide-right"] {
+  transform: translate3d(100px, 0, 0);
+  opacity: 0;
+}
+[data-aos="slide-right"].aos-animate {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+[data-aos="zoom-in-up"] {
+  transform: translate3d(0, 40px, 0) scale(0.6);
+  opacity: 0;
+}
+[data-aos="zoom-in-up"].aos-animate {
+  transform: translate3d(0, 0, 0) scale(1);
+  opacity: 1;
+}
+
+body {
+  transition: background 0.3s, color 0.3s;
+}
