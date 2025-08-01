@@ -9,6 +9,7 @@ Website chính thức của công ty SEIKI chuyên cung cấp dịch vụ xuất
 ## ✨ Tính năng chính
 
 ### 🎨 **Frontend**
+
 - ✅ **Angular 19** - Framework hiện đại
 - ✅ **Bootstrap 5** - Responsive design
 - ✅ **AOS Animations** - Hiệu ứng cuộn mượt mà
@@ -17,6 +18,7 @@ Website chính thức của công ty SEIKI chuyên cung cấp dịch vụ xuất
 - ✅ **Mobile First** - Tối ưu cho điện thoại
 
 ### 🔍 **SEO & Marketing**
+
 - ✅ **Meta Tags** đầy đủ cho tất cả trang
 - ✅ **Open Graph** - Chia sẻ đẹp trên Facebook/Zalo
 - ✅ **Twitter Cards** - Hiển thị tốt trên Twitter
@@ -28,6 +30,7 @@ Website chính thức của công ty SEIKI chuyên cung cấp dịch vụ xuất
 ## 🛠️ Commands
 
 ### Development
+
 ```bash
 npm start                 # Start dev server
 npm test                 # Run tests
@@ -35,11 +38,12 @@ npm run watch           # Build with watch mode
 ```
 
 ### Production & Deploy
+
 ```bash
 # Build cho domain riêng
 ng run App:build:production --base-href "/"
 
-# Build cho GitHub Pages  
+# Build cho GitHub Pages
 ng run App:build:production --base-href "/ViecLamXKLD/"
 # hoặc
 npm run build:github
@@ -54,6 +58,7 @@ npx angular-cli-ghpages --dir=dist/app/browser --repo=https://github.com/BHieeus
 ## 🚀 Quick Setup
 
 1. **Clone & Install**:
+
 ```bash
 git clone <repository-url>
 cd SEIKI-XKLD-Website
@@ -61,12 +66,14 @@ npm install
 ```
 
 2. **Development**:
+
 ```bash
 npm start
 # Mở http://localhost:4200
 ```
 
 3. **Deploy**:
+
 ```bash
 npm run deploy:github
 ```
