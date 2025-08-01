@@ -58,6 +58,11 @@
                 "glob": "CNAME",
                 "input": "src",
                 "output": "/"
+              },
+              {
+                "glob": "googleb667a49e2e7ea51d.html",
+                "input": "src",
+                "output": "/"
               }
             ],
             "styles": [
