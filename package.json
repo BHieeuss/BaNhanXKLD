@@ -1,12 +1,12 @@
 {
-  "name": "seiki-xkld-website",
+  "name": "ba-nhan-xkld",
   "version": "1.0.0",
   "description": "Website xuất khẩu lao động Nhật Bản - SEIKI Company",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:github": "ng build --configuration=production --base-href=/ViecLamXKLD/",
+    "build:github": "ng build --configuration=production --base-href=/BaNhanXKLD/",
     "deploy:github": "npm run build:github && npx gh-pages -d dist/app",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",

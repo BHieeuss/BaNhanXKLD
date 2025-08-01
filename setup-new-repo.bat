@@ -48,14 +48,14 @@ echo Bước 5: Thiết lập remote repository...
 echo.
 echo 📝 Hướng dẫn:
 echo 1. Vào https://github.com/new
-echo 2. Tạo repository mới với tên: SEIKI-XKLD-Website
+echo 2. Tạo repository mới với tên: BaNhanXKLD
 echo 3. Chọn Public
 echo 4. KHÔNG check "Add a README file"
 echo 5. Click "Create repository"
-echo 6. Copy URL repository (https://github.com/username/SEIKI-XKLD-Website.git)
+echo 6. Copy URL repository (https://github.com/BHieeuss/BaNhanXKLD.git)
 echo.
 
-set /p repo_url="Nhập URL repository mới (ví dụ: https://github.com/username/SEIKI-XKLD-Website.git): "
+set /p repo_url="Nhập URL repository mới (ví dụ: https://github.com/BHieeuss/BaNhanXKLD.git): "
 
 git remote add origin %repo_url%
 git branch -M main
@@ -78,7 +78,7 @@ echo 4. Branch: gh-pages (sẽ tạo khi deploy lần đầu)
 echo 5. Chạy: npm run deploy:github
 echo.
 echo 🎯 Website sẽ có tại:
-echo - GitHub Pages: https://username.github.io/SEIKI-XKLD-Website/
+echo - GitHub Pages: https://bhieeuss.github.io/BaNhanXKLD/
 echo - Custom domain: https://banhanxkld.id.vn (sau khi setup DNS)
 echo.
 pause

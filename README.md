@@ -1,6 +1,13 @@
-# 🌟 SEIKI - Website Xuất Khẩu Lao Động Nhật Bản
+# 🌟 SEIKI - Website Xuất Khẩu Lao Động Nhật # Build cho GitHub Pages  
+ng run App:build:production --base-href "/BaNhanXKLD/"
+# hoặc
+npm run build:github
 
-## 🎯 Giới thiệu
+# Deploy GitHub Pages (Cách mới - Khuyên dùng)
+npm run deploy:github
+
+# Deploy GitHub Pages (Cách cũ)
+npx angular-cli-ghpages --dir=dist/app/browser --repo=https://github.com/BHieeuss/BaNhanXKLD.git🎯 Giới thiệu
 
 Website chính thức của công ty SEIKI chuyên cung cấp dịch vụ xuất khẩu lao động Nhật Bản tại khu vực Vĩnh Long, Trà Vinh và các tỉnh miền Tây.
 

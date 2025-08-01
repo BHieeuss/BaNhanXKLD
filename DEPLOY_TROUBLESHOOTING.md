@@ -37,7 +37,7 @@ npx gh-pages -d dist/app
 
 #### 4. **Kiểm tra cấu hình GitHub Repository**
 
-Vào GitHub repo: https://github.com/BHieeuss/ViecLamXKLD
+Vào GitHub repo: https://github.com/BHieeuss/BaNhanXKLD
 
 **Settings → Pages:**
 
