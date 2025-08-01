@@ -993,7 +993,6 @@ body:not(.dark-theme) .icon-wrapper {
 
 /* Starbucks-Style Footer Design */
 .starbucks-style-footer {
-  background-color: #1e3932;
   color: rgba(255, 255, 255, 0.87);
   padding: 60px 0 40px;
   position: relative;

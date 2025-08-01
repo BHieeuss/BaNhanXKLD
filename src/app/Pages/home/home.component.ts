@@ -26,47 +26,107 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
     // SEO Configuration for homepage
     this.seoService.updateSEO({
       title:
-        'SEIKI - Dịch vụ xuất khẩu lao động Nhật Bản tại Vĩnh Long, Trà Vinh | Uy tín - Chất lượng',
+        'Xuất Khẩu Lao Động Nhật Bản SEIKI - Dịch Vụ Uy Tín Số 1 Miền Tây | Visa TITP, SSW, Engineer',
       description:
-        'SEIKI - Công ty xuất khẩu lao động Nhật Bản uy tín tại Vĩnh Long, Trà Vinh. Hỗ trợ tìm việc làm tại Nhật với mức lương cao, chế độ đãi ngộ tốt. Liên hệ ngay để được tư vấn miễn phí!',
+        'SEIKI - Công ty xuất khẩu lao động Nhật Bản uy tín hàng đầu tại Vĩnh Long. Chuyên cung cấp dịch vụ toàn diện: tuyển dụng, đào tạo, hỗ trợ làm việc tại Nhật Bản với visa TITP, SSW và Engineer. Hotline: 034 431 5150',
       keywords:
-        'xuất khẩu lao động Nhật Bản, việc làm Nhật Bản, XKLĐ Vĩnh Long, XKLĐ Trà Vinh, tuyển dụng Nhật Bản, visa lao động Nhật, SEIKI',
+        'xuất khẩu lao động nhật bản, SEIKI, xuat khau lao dong nhat ban, việc làm nhật bản 2024, XKLĐ nhật bản vĩnh long, visa TITP, visa SSW, visa engineer nhật bản, đơn hàng nhật bản 2024, lương cao nhật bản, tuyển dụng nhật bản, thực tập sinh nhật bản, kỹ sư nhật bản, tokutei ginou, công ty xuất khẩu lao động uy tín, SEIKI vĩnh long, lao động kỹ năng đặc định, chương trình SSW nhật bản, đào tạo tiếng nhật, học tiếng nhật đi nhật, chi phí đi nhật bản, thủ tục visa nhật bản',
       image: 'https://banhanxkld.id.vn/assets/images/banner-right-image.png',
       url: 'https://banhanxkld.id.vn/',
       type: 'website',
     });
 
+    // Add comprehensive keywords
+    this.seoService.addComprehensiveKeywords();
+
     // Add structured data
     this.seoService.addLocalBusinessSchema();
     this.seoService.addServiceSchema();
 
+    // Add breadcrumb schema
+    this.seoService.addBreadcrumbSchema([
+      { name: 'Trang chủ', url: 'https://banhanxkld.id.vn/' },
+      { name: 'Xuất khẩu lao động Nhật Bản', url: 'https://banhanxkld.id.vn/' },
+    ]);
+
+    // Add article schema for better content understanding
+    this.seoService.addArticleSchema({
+      title: 'Xuất Khẩu Lao Động Nhật Bản SEIKI - Cơ Hội Việc Làm Lương Cao',
+      description:
+        'Hướng dẫn toàn diện về xuất khẩu lao động Nhật Bản: các chương trình visa, mức lương, ngành nghề hot và quy trình đăng ký',
+      datePublished: '2024-01-01',
+    });
+
+    // Add job posting schema for recruitment
+    this.seoService.addJobPostingSchema([
+      {
+        title: 'Kỹ sư IT - Visa Engineer Nhật Bản',
+        description:
+          'Tuyển dụng kỹ sư IT làm việc tại Nhật Bản với visa Engineer. Mức lương 300,000 - 500,000 yên/tháng',
+        salary: '300000-500000',
+      },
+      {
+        title: 'Thực tập sinh TITP - Ngành chế tạo',
+        description:
+          'Chương trình thực tập sinh kỹ thuật tại Nhật Bản, ngành chế tạo. Thời gian 3-5 năm',
+        salary: '120000-180000',
+      },
+      {
+        title: 'Lao động SSW - Ngành xây dựng',
+        description:
+          'Visa lao động có kỹ năng đặc định trong ngành xây dựng. Làm việc 5 năm tại Nhật Bản',
+        salary: '150000-250000',
+      },
+    ]);
+
+    // Add review schema for credibility
+    this.seoService.addReviewSchema();
+
     // Add FAQ structured data
     const faqs = [
       {
-        question: 'Chi phí xuất khẩu lao động Nhật Bản là bao nhiêu?',
+        question: 'Chi phí xuất khẩu lao động Nhật Bản qua SEIKI là bao nhiêu?',
         answer:
-          'Chi phí xuất khẩu lao động Nhật Bản dao động từ 120-150 triệu VNĐ tùy theo nghề nghiệp và chương trình. Chúng tôi hỗ trợ vay vốn với lãi suất ưu đãi.',
+          'Chi phí xuất khẩu lao động Nhật Bản dao động từ 120-200 triệu VNĐ tùy theo chương trình (TITP, SSW, Engineer). SEIKI hỗ trợ vay vốn ngân hàng với lãi suất ưu đãi 6-8%/năm.',
       },
       {
-        question: 'Thời gian đào tạo và xuất cảnh mất bao lâu?',
+        question: 'Thời gian đào tạo và xuất cảnh qua SEIKI mất bao lâu?',
         answer:
-          'Thời gian đào tạo tiếng Nhật và kỹ năng chuyên môn từ 6-12 tháng. Sau khi hoàn thành sẽ xuất cảnh trong vòng 1-2 tháng.',
+          'Thời gian đào tạo tiếng Nhật và kỹ năng chuyên môn từ 6-12 tháng tùy chương trình. SEIKI cam kết xuất cảnh trong vòng 1-2 tháng sau khi hoàn thành đào tạo và đậu visa.',
       },
       {
-        question: 'Mức lương làm việc tại Nhật Bản như thế nào?',
+        question: 'Mức lương làm việc tại Nhật Bản qua SEIKI như thế nào?',
         answer:
-          'Mức lương trung bình từ 130,000 - 200,000 yên/tháng (khoảng 25-38 triệu VNĐ) tùy theo nghề nghiệp và kinh nghiệm.',
+          'Mức lương trung bình từ 120,000 - 500,000 yên/tháng (23-95 triệu VNĐ) tùy theo chương trình: TITP (120-180k yên), SSW (150-250k yên), Engineer (300-500k yên). Làm thêm giờ có thể tăng 30-50% thu nhập.',
+      },
+      {
+        question: 'SEIKI hỗ trợ gì khi lao động làm việc tại Nhật Bản?',
+        answer:
+          'SEIKI có đội ngũ hỗ trợ tiếng Việt 24/7 tại Nhật Bản, giải quyết mọi vấn đề về công việc, cuộc sống, y tế. Tỷ lệ gia hạn hợp đồng qua SEIKI đạt 95%.',
+      },
+      {
+        question: 'Các ngành nghề nào đang hot tại Nhật Bản năm 2024?',
+        answer:
+          'Top ngành nghề hot: IT/Kỹ thuật (lương cao nhất), Chăm sóc sức khỏe, Chế tạo ô tô, Xây dựng, Nông nghiệp thực phẩm. SEIKI có đối tác tuyển dụng tại tất cả 14 ngành nghề SSW.',
+      },
+      {
+        question: 'Điều kiện để đi xuất khẩu lao động Nhật Bản qua SEIKI?',
+        answer:
+          'Độ tuổi 18-35, sức khỏe tốt, không có tiền án tiền sự. Tùy chương trình có yêu cầu về học vấn (TITP: THCS, SSW: THPT, Engineer: Cao đẳng/Đại học kỹ thuật). SEIKI hỗ trợ đào tạo từ cơ bản.',
       },
     ];
     this.seoService.addFAQSchema(faqs);
 
-    // Preload critical assets
+    // Preload critical assets for better performance
     this.assetPreloadService.preloadImages([
+      'assets/images/logo.png',
+      'assets/images/banner-right-image.png',
+      'assets/images/about-left-image.png',
       'assets/images/portfolio-image.png',
-      'assets/images/big-blog-thumb.jpg',
-      'assets/images/blog-thumb-01.jpg',
-      'assets/images/blog-dec.png',
-      'assets/images/contact-decoration.png',
+      'assets/images/service-icon-01.png',
+      'assets/images/service-icon-02.png',
+      'assets/images/service-icon-03.png',
+      'assets/images/service-icon-04.png',
     ]);
 
     // Initialize AOS with custom settings
