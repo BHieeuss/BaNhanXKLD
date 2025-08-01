@@ -26,9 +26,9 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
     // SEO Configuration for homepage
     this.seoService.updateSEO({
       title:
-        'Xuất Khẩu Lao Động Nhật Bản SEIKI - Dịch Vụ Uy Tín Số 1 Miền Tây | Visa TITP, SSW, Engineer',
+        'Xuất Khẩu Lao Động Nhật Bản SEIKI - Dịch Vụ Uy Tín tại khu vực Miền Nam | Visa TITP, SSW, Engineer',
       description:
-        'SEIKI - Công ty xuất khẩu lao động Nhật Bản uy tín hàng đầu tại Vĩnh Long. Chuyên cung cấp dịch vụ toàn diện: tuyển dụng, đào tạo, hỗ trợ làm việc tại Nhật Bản với visa TITP, SSW và Engineer. Hotline: 034 431 5150',
+        'SEIKI - Công ty xuất khẩu lao động Nhật Bản uy tín tại Vĩnh Long. Chuyên cung cấp dịch vụ toàn diện: tuyển dụng, đào tạo, hỗ trợ làm việc tại Nhật Bản với visa TITP, SSW và Engineer. Hotline: 034 431 5150',
       keywords:
         'xuất khẩu lao động nhật bản, SEIKI, xuat khau lao dong nhat ban, việc làm nhật bản 2024, XKLĐ nhật bản vĩnh long, visa TITP, visa SSW, visa engineer nhật bản, đơn hàng nhật bản 2024, lương cao nhật bản, tuyển dụng nhật bản, thực tập sinh nhật bản, kỹ sư nhật bản, tokutei ginou, công ty xuất khẩu lao động uy tín, SEIKI vĩnh long, lao động kỹ năng đặc định, chương trình SSW nhật bản, đào tạo tiếng nhật, học tiếng nhật đi nhật, chi phí đi nhật bản, thủ tục visa nhật bản',
       image: 'https://banhanxkld.id.vn/assets/images/banner-right-image.png',
